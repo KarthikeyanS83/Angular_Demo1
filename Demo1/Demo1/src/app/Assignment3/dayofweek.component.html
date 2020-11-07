@@ -1,0 +1,31 @@
+﻿<table>
+    <tr>
+        <td>
+            Enter Number
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+            <input type="text" [(ngModel)]="enteredvalue" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <input type="button" title="Submit" value="Submit" (click)="getValue()"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Day of the week
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+            <span>
+                {{dayvalue}}
+            </span>
+        </td>
+    </tr>
+</table>

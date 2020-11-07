@@ -1,0 +1,31 @@
+﻿<div>
+    <h4>Component 1</h4>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Brands
+            </th>
+            <th>
+                Manufacturer
+            </th>
+            <th>
+                Logo
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let brand of carBrands;">
+            <td>
+                {{brand.brandName}}
+            </td>
+            <td>
+                {{brand.manufacturer}}
+            </td>
+            <td>
+                <img src='https://imgd.aeplcdn.com/0X0/cw/brands/logos/{{brand.imgurl}}' width="40" />
+            </td>
+        </tr>
+    </tbody>
+</table>
