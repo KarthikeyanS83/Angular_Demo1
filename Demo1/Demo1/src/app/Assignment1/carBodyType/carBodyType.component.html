@@ -2,6 +2,13 @@
     <h4>Component 2</h4>
 </div>
 <table>
+    <tr>
+        <td>
+            <input type="button" class="btn-block" value={{btnText}} (click)="btnclick()" />
+        </td>
+    </tr>
+</table>
+<table>
     <thead>
         <tr>
             <th>
@@ -16,16 +23,18 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let type of carBodyTypes;">
-            <td>
-                {{type.brandType}}
-            </td>
-            <td>
-                {{type.NoofSeater}}
-            </td>
-            <td>
-                <img src='{{type.imgurl}}' width="40" />
-            </td>
-        </tr>
+        <ng-container *ngFor="let type of carBodyTypes;">
+            <tr *ngIf="btnText!='SHOW'">
+                <td>
+                    {{type.brandType}}
+                </td>
+                <td>
+                    {{type.NoofSeater}}
+                </td>
+                <td>
+                    <img src='{{type.imgurl}}' width="40" />
+                </td>
+            </tr>
+        </ng-container>
     </tbody>
 </table>

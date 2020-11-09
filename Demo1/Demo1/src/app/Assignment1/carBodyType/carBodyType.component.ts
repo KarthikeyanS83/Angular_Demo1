@@ -13,6 +13,10 @@ export class CarBodyTypeComponent {
         { brandType: 'Compact Sedan', NoofSeater: '5', imgurl: 'https://imgd.aeplcdn.com/0x0/cw/body/svg/compactsedan_clr.svg' },
     ];
 
+    btnText: string = 'HIDE';
 
+    btnclick(): void {
+        this.btnText = this.btnText == 'SHOW' ? 'HIDE' : 'SHOW';
+    }
 
 }

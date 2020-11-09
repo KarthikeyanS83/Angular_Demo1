@@ -14,6 +14,7 @@ var app_component_1 = require("./app.component");
 var carBrand_component_1 = require("./Assignment1/carBrand/carBrand.component");
 var carBodyType_component_1 = require("./Assignment1/carBodyType/carBodyType.component");
 var fuelType_component_1 = require("./Assignment1/FuelType/fuelType.component");
+var casecheck_component_1 = require("./Assignment8/casecheck.component");
 var interfacepgm_component_1 = require("./Assignment2/interfacepgm.component");
 var dayofweek_component_1 = require("./Assignment3/dayofweek.component");
 var AppModule = /** @class */ (function () {
@@ -22,7 +23,7 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, carBrand_component_1.CarBrandComponent, carBodyType_component_1.CarBodyTypeComponent, fuelType_component_1.CarFuelTypeComponent, interfacepgm_component_1.MyTimeComponent, dayofweek_component_1.MyWeekComponent],
+            declarations: [app_component_1.AppComponent, carBrand_component_1.CarBrandComponent, carBodyType_component_1.CarBodyTypeComponent, fuelType_component_1.CarFuelTypeComponent, interfacepgm_component_1.MyTimeComponent, dayofweek_component_1.MyWeekComponent, casecheck_component_1.CaseCheckComponent],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

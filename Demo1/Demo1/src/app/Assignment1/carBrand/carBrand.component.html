@@ -2,6 +2,22 @@
     <h4>Component 1</h4>
 </div>
 <table>
+    <tr>
+        <td>
+            Manufacturer : 
+        </td>
+        <td>
+            <select name="Select Manufacturer" id="ddlmanu" (change)="onChange($event.target.value)">
+                <option value="All">ALL</option>
+                <option value="India">INDIA</option>
+                <option value="German">GERMAN</option>
+                <option value="Japan">JAPAN</option>
+            </select>
+        </td>
+
+    </tr>
+</table>
+<table>
     <thead>
         <tr>
             <th>
@@ -16,16 +32,18 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let brand of carBrands;">
-            <td>
-                {{brand.brandName}}
-            </td>
-            <td>
-                {{brand.manufacturer}}
-            </td>
-            <td>
-                <img src='https://imgd.aeplcdn.com/0X0/cw/brands/logos/{{brand.imgurl}}' width="40" />
-            </td>
-        </tr>
+        <ng-container *ngFor="let brand of carBrands;">
+            <tr *ngIf="ddlselectedvalue=='All' || ddlselectedvalue==brand.manufacturer">
+                <td>
+                    {{brand.brandName}}
+                </td>
+                <td>
+                    {{brand.manufacturer}}
+                </td>
+                <td>
+                    <img src='https://imgd.aeplcdn.com/0X0/cw/brands/logos/{{brand.imgurl}}' width="40" />
+                </td>
+            </tr>
+        </ng-container>
     </tbody>
 </table>

@@ -23,7 +23,11 @@ var CarBrandComponent = /** @class */ (function () {
             { brandName: 'Audi', manufacturer: 'German', imgurl: 'audi.png' },
             { brandName: 'Jaguar', manufacturer: 'British', imgurl: 'jaguar.png' }
         ];
+        this.ddlselectedvalue = 'All';
     }
+    CarBrandComponent.prototype.onChange = function (value) {
+        this.ddlselectedvalue = value;
+    };
     CarBrandComponent = __decorate([
         core_1.Component({
             selector: 'car-brand',

@@ -20,6 +20,8 @@ export class CarBrandComponent {
         { brandName: 'Jaguar', manufacturer: 'British', imgurl: 'jaguar.png'}
     ];
 
-
-
+    ddlselectedvalue: string='All';
+    onChange(value:string): void {
+        this.ddlselectedvalue = value;
+    }
 }

@@ -1,0 +1,26 @@
+﻿<table>
+    <tr>
+        <td>
+            Enter :
+        </td>
+        <td>
+            <input type="text" [(ngModel)]="enteredvalue" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Lower case :
+        </td>
+        <td>
+            <span>{{enteredvalue | lowercase}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Upper case :
+        </td>
+        <td>
+            <span>{{enteredvalue | uppercase}}</span>
+        </td>
+    </tr>
+</table>

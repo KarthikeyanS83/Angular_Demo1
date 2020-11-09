@@ -111,6 +111,7 @@
     <Content Include="src\app\Assignment1\FuelType\fuelType.component.html" />
     <Content Include="src\app\Assignment3\dayofweek.component.html" />
     <Content Include="src\app\Assignment4\greetings.component.html" />
+    <Content Include="src\app\Assignment8\casecheck.component.html" />
     <Content Include="src\app\Styles.css" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
@@ -192,6 +193,7 @@
     <TypeScriptCompile Include="src\app\Assignment2\interfacepgm.component.ts" />
     <TypeScriptCompile Include="src\app\Assignment3\dayofweek.component.ts" />
     <TypeScriptCompile Include="src\app\Assignment4\greetings.component.ts" />
+    <TypeScriptCompile Include="src\app\Assignment8\casecheck.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

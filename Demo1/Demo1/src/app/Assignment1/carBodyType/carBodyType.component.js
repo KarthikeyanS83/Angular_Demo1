@@ -16,7 +16,11 @@ var CarBodyTypeComponent = /** @class */ (function () {
             { brandType: 'Sedan', NoofSeater: '5', imgurl: 'https://imgd.aeplcdn.com/0x0/cw/body/svg/sedan_clr.svg' },
             { brandType: 'Compact Sedan', NoofSeater: '5', imgurl: 'https://imgd.aeplcdn.com/0x0/cw/body/svg/compactsedan_clr.svg' },
         ];
+        this.btnText = 'HIDE';
     }
+    CarBodyTypeComponent.prototype.btnclick = function () {
+        this.btnText = this.btnText == 'SHOW' ? 'HIDE' : 'SHOW';
+    };
     CarBodyTypeComponent = __decorate([
         core_1.Component({
             selector: 'car-bodytype',
